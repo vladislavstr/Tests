@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.NavalBattle", "1.NavalBattle\1.NavalBattle.csproj", "{5FAE0EF1-DC92-47C9-9066-465AD4CAA951}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.DateChecker", "2.DateChecker\2.DateChecker.csproj", "{DC89A22D-C03D-4618-AECC-F6AEACA7D629}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5FAE0EF1-DC92-47C9-9066-465AD4CAA951}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FAE0EF1-DC92-47C9-9066-465AD4CAA951}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FAE0EF1-DC92-47C9-9066-465AD4CAA951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC89A22D-C03D-4618-AECC-F6AEACA7D629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC89A22D-C03D-4618-AECC-F6AEACA7D629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC89A22D-C03D-4618-AECC-F6AEACA7D629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC89A22D-C03D-4618-AECC-F6AEACA7D629}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
