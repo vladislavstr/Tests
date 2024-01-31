@@ -18,19 +18,36 @@
 //A99AA A99AA A99AA A99AA
 //-
 
+using System.Text;
+using System.Text.RegularExpressions;
 
-string value = "A9PQ";
+string snippet = @"\D{1}\d{1,2}\D{2}";
 
-CheckLastChar(value);
+int amount = int.Parse(Console.ReadLine());
 
-void CheckLastChar(string str)
+for (int i = 0; i < amount; i++)
 {
-    if (char.IsDigit(str[str.Length - 1]))
+    string input = Console.ReadLine();
+    int len = input.Length;
+    int stringBuilderCapacity = (int)(len * 1.5);
+
+    if (char.IsDigit(input[len - 1]) || len < 4)
     {
         Console.WriteLine("-");
     }
     else
     {
-        Console.WriteLine(str);
+        StringBuilder sbInput = new StringBuilder(input);
+        StringBuilder sbOut = new StringBuilder("", stringBuilderCapacity);
+
+        foreach (Match match in Regex.Matches(input, snippet))
+        {
+            sbOut.Append(match.Value + " ");
+            sbInput.Replace(match.Value, "");
+        }
+        if (sbInput.Length > 0)
+            Console.WriteLine("-");
+        else
+            Console.WriteLine(sbOut);
     }
 }
