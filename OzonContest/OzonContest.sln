@@ -12,6 +12,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.DataCompression", "5.Data
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6.Terminal", "6.Terminal\6.Terminal.csproj", "{C436F865-17BD-4C2B-8FED-464C6223F7C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.DocumentPrinter", "7.DocumentPrinter\7.DocumentPrinter.csproj", "{F1B90FC4-0BE5-4624-B178-9EF86BE42134}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{C436F865-17BD-4C2B-8FED-464C6223F7C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C436F865-17BD-4C2B-8FED-464C6223F7C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C436F865-17BD-4C2B-8FED-464C6223F7C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1B90FC4-0BE5-4624-B178-9EF86BE42134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1B90FC4-0BE5-4624-B178-9EF86BE42134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1B90FC4-0BE5-4624-B178-9EF86BE42134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1B90FC4-0BE5-4624-B178-9EF86BE42134}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
