@@ -26,13 +26,13 @@
 //3
 //8-9,21-99
 
-using var input = new StreamReader(Console.OpenStandardInput());
-using var output = new StreamWriter(Console.OpenStandardOutput());
+//using var input = new StreamReader(Console.OpenStandardInput());
+//using var output = new StreamWriter(Console.OpenStandardOutput());
 
-int amount = int.Parse(input.ReadLine());
+int amount = int.Parse(Console.ReadLine());
 for (int i = 0; i < amount; i++)
 {
-    var CountOfPages = int.Parse(input.ReadLine());
+    var CountOfPages = int.Parse(Console.ReadLine());
     HashSet<int> setOfPages = new HashSet<int>();
 
     for (int j = 1; j <= CountOfPages; j++)
@@ -40,8 +40,7 @@ for (int i = 0; i < amount; i++)
         setOfPages.Add(j);
     }
 
-    using var inputNumberOfPages = new StreamReader(Console.OpenStandardInput());
-    string[] NumberOfPages = inputNumberOfPages.ReadLine().Split(',');
+    string[] NumberOfPages = Console.ReadLine().Split(',');
 
     foreach (string item in NumberOfPages)
     {
@@ -86,5 +85,5 @@ for (int i = 0; i < amount; i++)
         }
     }
 
-    output.WriteLine(string.Join(",", needToPrint.ToArray()));
+    Console.WriteLine(string.Join(",", needToPrint.ToArray()));
 }
