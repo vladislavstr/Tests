@@ -7,15 +7,15 @@
 //8
 //1,7,1
 //8
-//1-5,1,7-7
+//1 - 5,1,7 - 7
 //10
-//1-5
+//1 - 5
 //10
 //1,2,3,4,5,6,8,9,10
 //3
-//1-2
+//1 - 2
 //100
-//1-2,3-7,10-20,100
+//1 - 2,3 - 7,10 - 20,100
 //Выходные данные
 
 //1-6,8
@@ -26,12 +26,13 @@
 //3
 //8-9,21-99
 
-using var inputAmount = new StreamReader(Console.OpenStandardInput());
-int amount = int.Parse(inputAmount.ReadLine());
+using var input = new StreamReader(Console.OpenStandardInput());
+using var output = new StreamWriter(Console.OpenStandardOutput());
+
+int amount = int.Parse(input.ReadLine());
 for (int i = 0; i < amount; i++)
 {
-    using var inputCountOfPages = new StreamReader(Console.OpenStandardInput());
-    var CountOfPages = int.Parse(inputCountOfPages.ReadLine());
+    var CountOfPages = int.Parse(input.ReadLine());
     HashSet<int> setOfPages = new HashSet<int>();
 
     for (int j = 1; j <= CountOfPages; j++)
@@ -85,6 +86,5 @@ for (int i = 0; i < amount; i++)
         }
     }
 
-    using var output = new StreamWriter(Console.OpenStandardOutput());
     output.WriteLine(string.Join(",", needToPrint.ToArray()));
 }
